@@ -1,3 +1,7 @@
+---
+import "../assets/app.css";
+import Nav from "../components/Nav.astro";
+---
 <!doctype html>
 <html lang="en">
 	<head>
@@ -8,11 +12,15 @@
 		<title>Astro Basics</title>
 	</head>
 	<body>
+		<!-- <Nav></Nav> -->
+
 		<slot />
+		
 	</body>
 </html>
 
 <style>
+	
 	html,
 	body {
 		margin: 0;
