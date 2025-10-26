@@ -1,1 +1,1 @@
-[bboksner.com](https://bboksner.com)
+[bboksn.com](https://bboksn.com)
