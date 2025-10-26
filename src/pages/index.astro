@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import bg from '../assets/bg.jpg';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -8,10 +10,14 @@ import Layout from '../layouts/Layout.astro';
 <Layout>
 	
 	<div
-  class="hero min-h-screen"
-  style="background-image: url('/assets/bg.jpg')"
+  class="hero min-h-screen relative"
 >
-  <div class="hero-overlay"></div>
+  <Image 
+    src={bg} 
+    alt="Background" 
+    class="absolute inset-0 w-full h-full object-cover"
+  />
+  <div class="hero-overlay bg-opacity-60 absolute inset-0"></div>
   <div class="hero-content text-neutral-content text-center">
     <div class="max-w-md">
       <h1 class="mb-5 text-5xl font-bold">Benjamin Boksner</h1>
